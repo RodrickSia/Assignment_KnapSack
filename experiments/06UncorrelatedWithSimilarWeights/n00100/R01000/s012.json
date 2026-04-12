@@ -1,0 +1,82 @@
+{
+  "test_case_name": "s012.kp",
+  "instance_metadata": {
+    "n_items": 100,
+    "coefficient_range": 1000,
+    "range_category": "R01000",
+    "capacity": 4953076,
+    "input_file_path": "./kplib/06UncorrelatedWithSimilarWeights/n00100/R01000/s012.kp"
+  },
+  "solver_configuration": {
+    "solver_name": "OR-Tools KnapsackSolver",
+    "algorithm": "KNAPSACK_MULTIDIMENSION_BRANCH_AND_BOUND_SOLVER",
+    "time_limit_sec": 300.0,
+    "language": "Python"
+  },
+  "performance_results": {
+    "solve_time_sec": 0.08397126197814941,
+    "is_optimal": true,
+    "total_profit": 35206,
+    "total_weight": 4902525,
+    "status": "COMPLETED"
+  },
+  "analytical_metrics": {
+    "capacity_utilization_ratio": 0.98979,
+    "unused_capacity": 50551,
+    "items_selected_count": 49,
+    "selection_density": 0.49
+  },
+  "solution_data": {
+    "selected_indices": [
+      0,
+      1,
+      2,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      15,
+      17,
+      19,
+      22,
+      25,
+      26,
+      28,
+      29,
+      34,
+      36,
+      39,
+      42,
+      43,
+      46,
+      47,
+      48,
+      49,
+      52,
+      53,
+      57,
+      58,
+      59,
+      61,
+      63,
+      67,
+      69,
+      71,
+      75,
+      77,
+      80,
+      81,
+      82,
+      83,
+      85,
+      88,
+      89,
+      92,
+      97,
+      98,
+      99
+    ]
+  }
+}
