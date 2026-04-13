@@ -199,7 +199,7 @@ def main():
     )
     parser.add_argument(
         "--range",
-        type=st
+        type=str,
         default=None,
         choices=["R01000", "R10000"],
         dest="range_filter",
