@@ -231,8 +231,10 @@ def main():
     print(f"Found {total} instances to solve using {num_workers} workers.")
     print(f"{'='*60}")
 
+    from tqdm import tqdm
+
     with multiprocessing.Pool(processes=num_workers) as pool:
-        results = pool.map(solve_task, tasks)
+        results = list(tqdm(pool.imap(solve_task, tasks), total=total, desc="Solving"))
 
     completed = sum(1 for r in results if r["status"] == "COMPLETED")
     timed_out = sum(1 for r in results if r["status"] == "TIME_LIMIT")
